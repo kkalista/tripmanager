@@ -1,20 +1,25 @@
 package pl.edu.agh.mwo;
 
+import java.util.ArrayList;
+import java.util.Collection;
+
 public class TripManager {
 
-	public void addTrip(Trip trip) {
-		
+	Collection<Trip> trips = new ArrayList<>();
+
+	public boolean addTrip(Trip trip) {
+		return trips.add(trip);
 	}
 
-	public void removeTrip(Trip trip) {
-		
+	public boolean removeTrip(Trip trip) {
+		return trips.remove(trip);
 	}
-	
-	public void getTrips() {
-		
+
+	public Collection<Trip> getTrips() {
+		return trips;
 	}
-	
+
 	public void findTrip(String keyword) {
-		
+
 	}
 }
