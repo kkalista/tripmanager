@@ -2,10 +2,25 @@ package pl.edu.agh.mwo;
 
 import static org.junit.Assert.*;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 public class TripTest {
 
+	@Test
+	public void testGetName() {
+		Trip trip = new Trip();
+		trip.setName("Spain");
+		Assert.assertEquals("Spain", trip.getName());
+	}
+
+	@Test
+	public void testGetDescription() {
+		Trip trip = new Trip();
+		trip.setDescription("First Trip Abroad");
+		Assert.assertEquals("First Trip Abroad", trip.getDescription());
+	}
+	
 	@Test
 	public void addPhoto() {
 		Trip trip = new Trip();
