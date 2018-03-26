@@ -20,7 +20,7 @@ public class TripTest {
 		trip.setDescription("First Trip Abroad");
 		Assert.assertEquals("First Trip Abroad", trip.getDescription());
 	}
-	
+
 	@Test
 	public void testAddPhoto() {
 		Trip trip = new Trip();
@@ -29,13 +29,12 @@ public class TripTest {
 		trip.addPhoto(photo);
 		assertEquals(1, trip.getPhotos().size());
 	}
-	
-	@Test
-	public void testGetPhoto() {
-		Trip trip = new Trip();
+
+	/*@Test
+	public void testGetPhotos() {
 		Photo photo = new Photo();
-		assertEquals(0, trip.getPhotos().size());
+		Trip trip = new Trip();
 		trip.addPhoto(photo);
-		assertEquals(1, trip.getPhotos().size());
-	}
+		Assert.assertEquals(photo, trip.getPhotos());
+	}*/
 }
