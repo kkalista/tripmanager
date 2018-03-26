@@ -22,7 +22,7 @@ public class TripTest {
 	}
 	
 	@Test
-	public void addPhoto() {
+	public void testAddPhoto() {
 		Trip trip = new Trip();
 		Photo photo = new Photo();
 		assertEquals(0, trip.getPhotos().size());
@@ -30,5 +30,12 @@ public class TripTest {
 		assertEquals(1, trip.getPhotos().size());
 	}
 	
-
+	@Test
+	public void testGetPhoto() {
+		Trip trip = new Trip();
+		Photo photo = new Photo();
+		assertEquals(0, trip.getPhotos().size());
+		trip.addPhoto(photo);
+		assertEquals(1, trip.getPhotos().size());
+	}
 }

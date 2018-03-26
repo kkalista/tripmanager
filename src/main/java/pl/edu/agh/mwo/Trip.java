@@ -33,5 +33,8 @@ public class Trip {
 	public void addPhoto(Photo photo) {
 		photos.add(photo);
 	}
+	
+	public void getPhoto() {
+	}
 
 }
