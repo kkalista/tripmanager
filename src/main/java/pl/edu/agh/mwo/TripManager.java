@@ -20,7 +20,4 @@ public class TripManager {
 		return trips;
 	}
 
-	public void findTrip(String keyword) {
-
-	}
 }
