@@ -1,6 +1,9 @@
 package pl.edu.agh.mwo;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -8,14 +11,14 @@ import org.junit.Test;
 public class TripTest {
 
 	@Test
-	public void testGetName() {
+	public void testAddName() {
 		Trip trip = new Trip();
 		trip.setName("Spain");
 		Assert.assertEquals("Spain", trip.getName());
 	}
 
 	@Test
-	public void testGetDescription() {
+	public void testAddDescription() {
 		Trip trip = new Trip();
 		trip.setDescription("First Trip Abroad");
 		Assert.assertEquals("First Trip Abroad", trip.getDescription());
@@ -30,11 +33,13 @@ public class TripTest {
 		assertEquals(1, trip.getPhotos().size());
 	}
 
-	/*@Test
+	@Test
 	public void testGetPhotos() {
-		Photo photo = new Photo();
+		Collection<Photo> photos = new ArrayList<>();
 		Trip trip = new Trip();
+		Photo photo = new Photo();
 		trip.addPhoto(photo);
-		Assert.assertEquals(photo, trip.getPhotos());
-	}*/
+		photos.add(photo);
+		Assert.assertEquals(photos, trip.getPhotos());
+	}
 }
