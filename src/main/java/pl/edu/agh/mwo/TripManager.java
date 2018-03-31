@@ -5,6 +5,7 @@ import java.util.Collection;
 
 public class TripManager {
 
+	
 	Collection<Trip> trips = new ArrayList<>();
 
 	public boolean addTrip(Trip trip) {
