@@ -6,7 +6,7 @@ import org.junit.Test;
 public class PhotoTest {
 
 	@Test
-	public void testAddComment() {
+	public void testGetComment() {
 		Photo photo = new Photo();
 		photo.setComment("Amazing view!");
 		Assert.assertEquals("Amazing view!", photo.getComment());

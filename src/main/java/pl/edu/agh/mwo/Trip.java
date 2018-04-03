@@ -1,14 +1,14 @@
 package pl.edu.agh.mwo;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 public class Trip {
 
 	private String name;
 	private String description;
 
-	Collection<Photo> photos = new ArrayList<Photo>();
+	List<Photo> photos = new ArrayList<Photo>();
 
 	public String getName() {
 		return name;
@@ -26,7 +26,7 @@ public class Trip {
 		this.description = description;
 	}
 
-	public Collection<Photo> getPhotos() {
+	public List<Photo> getPhotos() {
 		return photos;
 	}
 

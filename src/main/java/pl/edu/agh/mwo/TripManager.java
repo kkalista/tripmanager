@@ -1,12 +1,11 @@
 package pl.edu.agh.mwo;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 public class TripManager {
 
-	
-	Collection<Trip> trips = new ArrayList<>();
+	List<Trip> trips = new ArrayList<>();
 
 	public boolean addTrip(Trip trip) {
 		return trips.add(trip);
@@ -16,7 +15,7 @@ public class TripManager {
 		return trips.remove(trip);
 	}
 
-	public Collection<Trip> getTrips() {
+	public List<Trip> getTrips() {
 		return trips;
 	}
 

@@ -3,7 +3,7 @@ package pl.edu.agh.mwo;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -11,14 +11,14 @@ import org.junit.Test;
 public class TripTest {
 
 	@Test
-	public void testAddName() {
+	public void testGetName() {
 		Trip trip = new Trip();
 		trip.setName("Spain");
 		Assert.assertEquals("Spain", trip.getName());
 	}
 
 	@Test
-	public void testAddDescription() {
+	public void testGetDescription() {
 		Trip trip = new Trip();
 		trip.setDescription("First Trip Abroad");
 		Assert.assertEquals("First Trip Abroad", trip.getDescription());
@@ -35,7 +35,7 @@ public class TripTest {
 
 	@Test
 	public void testGetPhotos() {
-		Collection<Photo> photos = new ArrayList<>();
+		List<Photo> photos = new ArrayList<>();
 		Trip trip = new Trip();
 		Photo photo = new Photo();
 		trip.addPhoto(photo);

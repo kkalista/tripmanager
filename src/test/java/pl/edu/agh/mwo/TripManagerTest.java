@@ -3,7 +3,7 @@ package pl.edu.agh.mwo;
 import static org.junit.Assert.assertEquals;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -34,7 +34,7 @@ public class TripManagerTest {
 
 	@Test
 	public void testGetTrips() {
-		Collection<Trip> trips = new ArrayList<>();
+		List<Trip> trips = new ArrayList<>();
 		Trip trip = new Trip();
 		tripManager.addTrip(trip);
 		trips.add(trip);
