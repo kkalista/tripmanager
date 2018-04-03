@@ -18,5 +18,13 @@ public class TripManager {
 	public List<Trip> getTrips() {
 		return trips;
 	}
-
+	
+	public Trip findTrip(String keyword) {
+		for (Trip trip : trips) {
+			if (trip.getName().contains(keyword)) {
+				return trip;
+			}
+		}
+		return null;
+	}
 }

@@ -41,4 +41,13 @@ public class TripManagerTest {
 		assertEquals(trips, tripManager.getTrips());
 	}
 
+	@Test
+	public void testFindTrip() {
+		Trip trip = new Trip();
+		trip.setName("Tenerife");
+		tripManager.addTrip(trip);
+		assertEquals(trip, tripManager.findTrip("Tenerife"));
+
+	}
+
 }
