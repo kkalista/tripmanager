@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -42,7 +43,7 @@ public class TripManagerTest {
 	}
 
 	@Test
-	public void testFindTrip() {
+	public void testFindTripOne() {
 		Trip trip = new Trip();
 		trip.setName("Tenerife");
 		tripManager.addTrip(trip);
@@ -50,4 +51,11 @@ public class TripManagerTest {
 
 	}
 
+	@Test
+	public void testFindTripZero() {
+		Trip trip = new Trip();
+		trip.setName("Gran Canaria");
+		tripManager.addTrip(trip);
+		Assert.assertNotEquals(trip, tripManager.findTrip("Tenerife"));
+	}
 }
